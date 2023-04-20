@@ -32,3 +32,13 @@ function update() {
   updateFood()
   checkDeath()
 }
+
+function draw() {
+  gameBoard.innerHTML = ''
+  drawSnake(gameBoard)
+  drawFood(gameBoard)
+}
+
+function checkDeath() {
+  gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+}
