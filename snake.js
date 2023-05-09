@@ -44,3 +44,7 @@ export function getSnakeHead() {
 export function snakeIntersection() {
   return onSnake(snakeBody[0], { ignoreHead: true })
 }
+
+function equalPositions(pos1, pos2) {
+  return pos1.x === pos2.x && pos1.y === pos2.y
+}
